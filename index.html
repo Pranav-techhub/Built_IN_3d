@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TECHFEST // BEYOND THE CODE 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cyber: {
+                bg: '#08090d',
+                card: '#10121a',
+                cyan: '#00f0ff',
+                purple: '#7000ff',
+                text: '#f0f4f8',
+                muted: '#8a99ad',
+                border: '#1e2638'
+              }
+            },
+            fontFamily: {
+              mono: ['Fira Code', 'monospace'],
+              sans: ['Inter', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-cyber-bg text-cyber-text overflow-x-hidden select-none">
+    <div id="root"></div>
+    <script type="module" src="/src/App.jsx"></script>
+  </body>
+</html>
