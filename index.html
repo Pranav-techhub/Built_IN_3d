@@ -11,18 +11,29 @@
           extend: {
             colors: {
               cyber: {
-                bg: '#08090d',
-                card: '#10121a',
+                bg: '#050608',
+                card: '#0c0e14',
                 cyan: '#00f0ff',
+                pink: '#ff007f',
                 purple: '#7000ff',
                 text: '#f0f4f8',
                 muted: '#8a99ad',
-                border: '#1e2638'
+                border: '#1b2234'
               }
             },
             fontFamily: {
               mono: ['Fira Code', 'monospace'],
               sans: ['Inter', 'sans-serif']
+            },
+            animation: {
+              'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'glow': 'glow 2s ease-in-out infinite alternate',
+            },
+            keyframes: {
+              glow: {
+                '0%': { boxShadow: '0 0 10px rgba(0, 240, 255, 0.3)' },
+                '100%': { boxShadow: '0 0 25px rgba(0, 240, 255, 0.8), 0 0 50px rgba(112, 0, 255, 0.4)' },
+              }
             }
           }
         }
